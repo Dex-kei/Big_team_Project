@@ -1,0 +1,41 @@
+標題類 <h2> (如主頁的NEWS、EXPLORE...等)
+字級 35
+字體 Sitka Display 
+Bold
+
+小標(英文) <h3> 
+字級 32
+字體 Sitka Display 
+Bold
+
+小標(中文) <h3>
+字級 30
+字體 NSimSun 
+Regular
+
+小小標 <h4>
+字級 24
+字體 Sitka Display 
+Regular
+
+
+段落 <p>
+中英文皆使用:
+字體 Sitka Display 
+Regular
+字級可依排版自行設定
+
+
+
+色彩：
+
+重點色 #cc543a
+
+文字色
+#000
+#4d4b4b
+#c0c0c0
+
+有需要色塊的地方可參考使用
+#d1d2d5
+#a2a2a2
