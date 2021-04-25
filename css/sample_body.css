@@ -1,5 +1,6 @@
 body {
     font-family: 'Faustina', serif !important;
+    /* font-family: 'Noto Sans TC', serif !important; */
     background-image: url(../img/logo/logo-002.svg);
 }
 
@@ -31,6 +32,7 @@ p {
     margin: 0;
     letter-spacing:4px;
     font-family: 'Faustina', serif;
+    /* font-family: 'Noto Sans TC', serif !important; */
     /* 追加修正 */
     text-align: justify;
 }
@@ -51,7 +53,7 @@ nav {
 }
 
 .navline {
-    width: 80%;
+    /* width: 80%; */
     /* height: 0.5px; */
     background-color: rgb(184, 184, 184);
     margin: 0 auto;
@@ -117,6 +119,10 @@ footer {
     .navbar .ham {
         display: none;
     }
+    .navline {
+        width: 80%;
+       
+    }
 }
 
 
@@ -135,5 +141,9 @@ footer {
     .navbar .fa-bars {
         color: #4b4b4b;
         font-size: 30px;
+    }
+    .navline {
+        width: 85%;
+       
     }
 }
