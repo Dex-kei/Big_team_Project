@@ -1,5 +1,6 @@
 body {
     font-family: 'Faustina', serif !important;
+    /* font-family: 'Sitka Display', NSimSun, 'sans-serif'; */
     /* font-family: 'Noto Sans TC', serif !important; */
     background-image: url(../img/logo/logo-002.svg);
 }
@@ -31,7 +32,7 @@ p {
     /* 追加 */
     margin: 0;
     letter-spacing:4px;
-    font-family: 'Faustina', serif;
+    /* font-family: 'Faustina', serif; */
     /* font-family: 'Noto Sans TC', serif !important; */
     /* 追加修正 */
     text-align: justify;
@@ -68,12 +69,12 @@ nav img {
 }
 
 button {
-    padding: 12px 18px;
+    padding: 5px 35px;
     background-color: #cc543a;
     color: white;
     border-radius: 30px;
     border: none;
-    font-family: 'Sitka Display', NSimSun, 'sans-serif';
+    /* font-family: 'Sitka Display', NSimSun, 'sans-serif'; */
 
 }
 
@@ -120,8 +121,8 @@ footer {
         display: none;
     }
     .navline {
-        width: 80%;
-       
+        /* width: 80%; */
+        width: 1586px;
     }
 }
 
@@ -143,7 +144,7 @@ footer {
         font-size: 30px;
     }
     .navline {
-        width: 85%;
+        /* width: 85%; */
        
     }
 }
