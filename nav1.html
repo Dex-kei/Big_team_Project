@@ -1,60 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
-
-    <!-- 重置 -->
     <link rel="stylesheet" href="./css/reset.css">
-    <!-- bootstrap 4.6.0 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- 動畫 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- 小圖示 -->
-    <!-- <script src="https://kit.fontawesome.com/271f30e909.js" crossorigin="anonymous"></script> -->
-    <!-- 文字 -->
+    <script src="https://kit.fontawesome.com/271f30e909.js" crossorigin="anonymous"></script>
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    <!-- body css -->
-    <link rel="stylesheet" href="./css/sample_body.css">
+
+    <title>nav1</title>
 
     <style>
         body {
-            font-family: 'Sitka Display', NSimSun, 'sans-serif';
-            background-image: url(./img/logo/logo-002.svg);
+            font-family: 'Faustina', serif;
+
+            /* 下二為測試用 */
+            /* height: 500vh; */
+            /* background-image: url(./img/nav_bcc2.png); */
         }
 
-        /* h2 {
-            font-size: 35px;
-            font-weight: bold;
-        }
-
-        h3 {
-            font-size: 32px;
-            font-weight: normal;
-        }
-
-        h4 {
-            font-size: 24px;
-            font-weight: normal;
-        }
-
-        p {
-            字級可自訂
-            font-size: 20px;
-            font-weight: normal;
-        } */
-
-        /* navbar */
-        /* burgurBar */
-        .nav_burgurBar {
+/* burgurBar */
+        .nav_burgurBar{
             background-image: url(./img/nav_bcc.png);
             position: sticky;
             top: 0;
@@ -64,17 +38,16 @@
 
             border-bottom: 1px solid rgba(203, 203, 203, .5);
         }
-
         .nav_burgurBar_img {
             margin: 0 20px;
         }
 
-        .nav_logo_mobile {
+        .nav_logo_mobile{
             margin: 0 10px;
         }
 
 
-        /* overlayNav */
+/* overlayNav */
         .nav_overlayNav {
             background-color: rgba(0, 0, 0, 0.9);
             width: 100%;
@@ -83,7 +56,6 @@
             top: 0;
             left: 0;
             z-index: 99;
-            /* display: none; */
             transition: .7s;
 
             transform: translateY(-2500px);
@@ -101,54 +73,39 @@
         }
 
 
-
-
-        /* navbar */
-        .nav_navbar_com {
+/* nav-bar */
+        .nav_index_navbar_com {
             width: 100%;
             background-image: url(./img/nav_barBcc.jpg);
-
-            position: fixed;
-            top: 0;
+            padding: 40px 0;
+            position: sticky;
+            top: 0px;
             z-index: 99;
         }
 
-        .nav_navbar_com_container {
-            width: 90%;
+        .nav_index_navbarBox {
+            width: 75%;
             display: flex;
-            margin: 10px auto;
-            padding: 0;
+            justify-content: space-between;
         }
 
-        .nav_navbar {
-            width: 94%;
-            display: flex;
-            align-items: center;
-        }
-
-        .nav_navbarBox {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .nav_nav_left {
-            width: 70%;
+        .nav_index_navbar_left {
+            width: 80%;
             display: flex;
             justify-content: space-between;
             list-style-type: none;
-            margin: 0px;
+            margin: 0 0 0 100px;
         }
 
-        .nav_nav_right {
+        .nav_index_navbar_right {
+            width: 20%;
             display: flex;
             justify-content: flex-end;
             list-style-type: none;
             margin: 0;
         }
 
-        .nav_navbarBox li {
+        .nav_index_navbarBox li {
             font-family: 'Noto Serif TC', serif;
             font-size: 16px;
             color: #000;
@@ -158,88 +115,65 @@
             transition: .5s;
         }
 
-        .nav_navbarBox li:hover {
+        .nav_index_navbarBox li:hover {
             color: #cc543a;
             bottom: 10px;
         }
 
-        .nav_nav_left li {
+        .nav_index_navbar_left li{
             width: 77px;
         }
 
-        .nav_navbarBox span {
+        .nav_index_navbarBox span {
             padding: 0 10px;
         }
 
-        .nav_navbarBox a,
-        .nav_overlayNavBox a {
+        .nav_index_navbarBox a,
+        .index_overlayNavBox a {
             text-decoration: none;
         }
 
-        .nav_navline {
-            width: 80%;
-            height: 1px;
-            background-color: rgba(203, 203, 203, .7);
-            border: 0;
-            margin: 0 auto;
-        }
-
-        nav img {
-            width: 6%;
-        }
-
-        .nav_news::before {
+        .nav_news::before{
             content: "最新消息";
         }
-
-        .nav_news:hover::before {
+        .nav_news:hover::before{
             content: "NEWS";
         }
-
-        .nav_explore::before {
+        .nav_explore::before{
             content: "探索灣廟";
         }
-
-        .nav_explore:hover::before {
+        .nav_explore:hover::before{
             content: "EXPLORE";
         }
-
-        .nav_serv::before {
+        .nav_serv::before{
             content: "線上服務";
         }
-
-        .nav_serv:hover::before {
+        .nav_serv:hover::before{
             content: "SERVICE";
         }
-
-        .nav_trip::before {
+        .nav_trip::before{
             content: "聖地巡禮";
         }
-
-        .nav_trip:hover::before {
+        .nav_trip:hover::before{
             content: "TRIP";
         }
-
-        .nav_shop::before {
+        .nav_shop::before{
             content: "祈福商店";
         }
-
-        .nav_shop:hover::before {
+        .nav_shop:hover::before{
             content: "SHOP";
         }
-
-        .nav_cart::before {
+        .nav_cart::before{
             content: "購物車";
         }
-
-        .nav_cart:hover::before {
+        .nav_cart:hover::before{
             content: "CART";
         }
 
 
 
 
-        /* login */
+/* login */
         .modal-content-re {
             background-image: url(./img/nav_bcc2.png);
             border: 0;
@@ -303,97 +237,7 @@
             background-color: #dd745e;
         }
 
-
-        /* 麵包屑 */
-
-        .breadcrumb_style {
-            background-image: url(./img/nav_background_1.png);
-            /* navbar多厚 就推多少paddding */
-
-        }
-
-        .breadcrumb_style_1 {
-            padding: 20px 0;
-            align-items: center;
-            margin: auto;
-        }
-
-        .astlyep {
-            font-size: 14px;
-            letter-spacing: 2px;
-            color: #707070;
-            list-style-type: none;
-            text-decoration: none;
-
-        }
-
-        .breadcrumb_style_1 img {
-            height: 10px;
-            width: 10px;
-            margin: 0 10px;
-        }
-
-
-
-
-
-
-        /* 按鈕 */
-        .btns {
-            margin: 300px;
-        }
-
-        button {
-            padding: 12px 18px;
-            background-color: #cc543a;
-            color: white;
-            border-radius: 30px;
-            border: none;
-            font-family: 'Sitka Display', NSimSun, 'sans-serif';
-
-        }
-
-        button:focus {
-            outline: 0;
-            box-shadow: 0 0 0 1pt rgb(77, 77, 77);
-        }
-
-        i {
-            padding: 0 8px;
-        }
-
-
-        /* footer */
-        footer {
-            width: 100%;
-            height: 70px;
-            background-color: #cc543a;
-            color: white;
-            letter-spacing: 3px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        @media screen and (min-width: 1400px) {
-
-            /* 麵包屑 */
-            .breadcrumb_style {
-                /* navbar多厚 就推多少paddding */
-                /* 玳禎navbar桌機版 無填滿 這邊請填滿105px */
-                padding-top: 105px;
-            }
-
-            .breadcrumb_style_1 {
-                width: 80%;
-            }
-
-
-        }
-
-
-
-        @media screen and (max-width: 1400px) {
+        @media (max-width: 770px) {
 
             /* nav */
             .nav_burgurBar {
@@ -402,7 +246,7 @@
                 justify-content: space-between;
             }
 
-            .nav_navbar_com {
+            .nav_index_navbar_com {
                 display: none;
             }
 
@@ -412,31 +256,13 @@
                 align-items: center;
                 justify-content: center;
             }
-
-            /* 麵包屑 */
-            .breadcrumb_style {
-                /* navbar多厚 就推多少paddding */
-                /* 玳禎navbar手機版 有填滿 這邊請註解掉 */
-                /* padding-top: 80px; */
-            }
-
-            .breadcrumb_style_1 {
-                /* 手機板寬 自行設定 */
-                width: 85%;
-            }
-
-            .breadcrumb_style_1 {
-                /* contanier架構專用 padding 0 15px  */
-                /* padding: 20px 15px; */
-                /* width: 100%; */
-            }
-
         }
     </style>
+
 </head>
 
 <body>
-    <!-- navbar -->
+
     <div class="nav_burgurBar">
         <div class="nav_burgurBar_img">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20">
@@ -450,7 +276,7 @@
                 </g>
             </svg>
         </div>
-
+        
         <div class="nav_logo_mobile">
             <img src="./img/nav_logo_mobile.svg" alt="">
         </div>
@@ -478,7 +304,7 @@
                     <li>線上服務</li>
                 </a>
                 <a href="">
-                    <li>聖地行旅</li>
+                    <li>聖地巡禮</li>
                 </a>
                 <a href="">
                     <li>祈福商店</li>
@@ -493,50 +319,39 @@
         </div>
     </div>
 
-    <!-- 電腦螢幕大小的navbar -->
-    <nav class="nav_navbar_com">
-        <div class="nav_navbar_com_container">
-            <!-- 請依檔案位置修改logo路徑 -->
-            <img src='./img/nav_logo.svg'>
-
-            <div class="nav_navbar">
-                <div class="nav_navbarBox">
-                    <ul class="nav_nav_left">
-                        <a href="">
-                            <li class="nav_news"></li>
-                        </a>
-                        <a href="">
-                            <li class="nav_explore"></li>
-                        </a>
-                        <a href="">
-                            <li class="nav_serv"></li>
-                        </a>
-                        <a href="">
-                            <li class="nav_trip"></li>
-                        </a>
-                        <a href="">
-                            <li class="nav_shop"></li>
-                        </a>
-                        <a href="">
-                            <li class="nav_cart"></li>
-                        </a>
-                    </ul>
-                    <ul class="nav_nav_right">
-                        <a href="" data-toggle="modal" data-target="#loginCenter">
-                            <li>登入</li>
-                        </a>
-                        <span>|</span>
-                        <a href="" data-toggle="modal" data-target="#registerCenter">
-                            <li>註冊</li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-
+    <div class="nav_index_navbar_com">
+        <div class="nav_index_navbarBox">
+            <ul class="nav_index_navbar_left">
+                <a href="">
+                    <li class="nav_news"></li>
+                </a>
+                <a href="">
+                    <li class="nav_explore"></li>
+                </a>
+                <a href="">
+                    <li class="nav_serv"></li>
+                </a>
+                <a href="">
+                    <li class="nav_trip"></li>
+                </a>
+                <a href="">
+                    <li class="nav_shop"></li>
+                </a>
+                <a href="">
+                    <li class="nav_cart"></li>
+                </a>
+            </ul>
+            <ul class="nav_index_navbar_right">
+                <a href="" data-toggle="modal" data-target="#loginCenter">
+                    <li>登入</li>
+                </a>
+                <span>|</span>
+                <a href="" data-toggle="modal" data-target="#registerCenter">
+                    <li>註冊</li>
+                </a>
+            </ul>
         </div>
-
-        <hr class="nav_navline">
-    </nav>
+    </div>
 
     <!-- login -->
     <div class="modal fade" id="loginCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -552,8 +367,7 @@
                 <div class="modal-body">
                     <form class="mt-3">
                         <div class="form-group mb-3">
-                            <input type="text" class="form-control form-control-re" id="account-name"
-                                placeholder="Email">
+                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="Email">
                         </div>
                         <div class="form-group">
                             <input class="form-control form-control-re" id="password-text" placeholder="Password">
@@ -587,8 +401,7 @@
                     <form class="mt-3">
                         <div class="form-group mb-3">
                             <p>請輸入您註冊的電子郵件，您將會在電子郵件信箱中收到重設密碼的連結。</p>
-                            <input type="text" class="form-control form-control-re" id="account-name"
-                                placeholder="Email">
+                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="Email">
                         </div>
                     </form>
                 </div>
@@ -613,19 +426,16 @@
                 <div class="modal-body">
                     <form class="mt-3">
                         <div class="form-group mb-3">
-                            <input type="text" class="form-control form-control-re" id="account-name"
-                                placeholder="User Name">
+                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="User Name">
                         </div>
                         <div class="form-group mb-3">
-                            <input type="text" class="form-control form-control-re" id="account-name"
-                                placeholder="Email">
+                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="Email">
                         </div>
                         <div class="form-group">
                             <input class="form-control form-control-re" id="password-text" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <input class="form-control form-control-re" id="password-text"
-                                placeholder="Repeat Password">
+                            <input class="form-control form-control-re" id="password-text" placeholder="Repeat Password">
                         </div>
                     </form>
                 </div>
@@ -635,83 +445,26 @@
             </div>
         </div>
     </div>
+    
 
 
-    <!-- 我是麵包屑-->
-    <div class="breadcrumb_style   backgroundimg_1">
-        <div class="d-flex flex-wrap breadcrumb_style_1 ">
-            <a href="" class="astlyep">自己編輯路徑</a>
-            <!-- 共用雲端找箭頭icon-->
-            <img src="./img/nav_arrow_right.svg">
-            <a href="" class="astlyep">自己編輯路徑2</a>
-            <img src="./img/nav_arrow_right.svg">
-            <a href="" class="astlyep">自己編輯路徑3</a>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="btns">
-        <button>
-            <p>加入購物車</p>
-        </button>
-
-        <button>
-            <p><i class="fas fa-heart"></i></p>
-        </button>
-    </div>
-
-
-    <footer>
-        <p>Copyright© TempleTrip.tw</p>
-    </footer>
-
-
-
-    <!-- Js  相關設定~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!-- bootstrap4.6.0 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://unpkg.com/moment-lunar@0.0.4/moment-lunar.min.js"></script>
     <script>
+        //Login hide
+        $('#registerbtn').click(function () {
+            $('#loginCenter').modal('hide');
+        })
 
-        const lunarDate = moment().year(2021).month(2).date(24).lunar().format('YYYY-MM-DD');
-        const solarDate = moment().year(2017).month(0).date(1).solar().format('YYYY-MM-DD');
-
-        console.log(lunarDate);
-        console.log(solarDate);
-    </script>
-
-
-
+        $('#passwordbtn').click(function () {
+            $('#loginCenter').modal('hide');
+        })
 
 
 
-
-
-
-
-
-    <script>
 
         // overlayNav進場
         $('.nav_burgurBar_img').click(function () {
@@ -721,10 +474,10 @@
             }
 
             $(".nav_overlayNav").css(navPosition);
-        })
+            })
 
-        // overlayNav退場
-        $('.nav_closeBtn').click(function () {
+            // overlayNav退場
+            $('.nav_closeBtn').click(function () {
 
             let navPosition = {
                 transform: 'translateY(-2500px)',
@@ -733,23 +486,7 @@
 
             $(".nav_overlayNav").css(navPosition);
         })
-
-
-        //Login hide
-        $('#registerbtn').click(function () {
-            $('#loginCenter').modal('hide');
-        })
-
-        $('#passwordbtn').click(function () {
-            $('#loginCenter').modal('hide');
-        })
     </script>
-
-
-
-
-
-
 </body>
 
 </html>
